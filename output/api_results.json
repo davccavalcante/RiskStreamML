@@ -1,0 +1,78 @@
+{
+    "status": "success",
+    "timestamp": "2025-07-15T10:01:25.686533",
+    "summary_statistics": {
+        "count": "13.0",
+        "mean": "1224.923076923077",
+        "std": "385.7187617592343",
+        "min": "780.9",
+        "25%": "850.0",
+        "50%": "1200.5",
+        "75%": "1500.75",
+        "max": "2100.0"
+    },
+    "duplicates": [
+        {
+            "ssn": "111-00-1111",
+            "payment_date": "2025-01-15",
+            "amount": 1200.5,
+            "beneficiary_name": "John Doe",
+            "payment_month": "2025-01"
+        },
+        {
+            "ssn": "111-00-1111",
+            "payment_date": "2025-01-15",
+            "amount": 1200.5,
+            "beneficiary_name": "John Doe Duplicate",
+            "payment_month": "2025-01"
+        },
+        {
+            "ssn": "555-00-5555",
+            "payment_date": "2025-02-15",
+            "amount": 1150.0,
+            "beneficiary_name": "Charles Brown",
+            "payment_month": "2025-02"
+        },
+        {
+            "ssn": "555-00-5555",
+            "payment_date": "2025-02-15",
+            "amount": 1150.0,
+            "beneficiary_name": "Charles Brown Duplicate",
+            "payment_month": "2025-02"
+        }
+    ],
+    "anomalies": [
+        {
+            "ssn": "444-00-4444",
+            "payment_date": "2025-01-15",
+            "amount": 990.2,
+            "beneficiary_name": "Mary Williams"
+        },
+        {
+            "ssn": "666-00-6666",
+            "payment_date": "2025-02-15",
+            "amount": 2100.0,
+            "beneficiary_name": "Patricia Miller"
+        },
+        {
+            "ssn": "777-00-7777",
+            "payment_date": "2025-03-15",
+            "amount": 780.9,
+            "beneficiary_name": "Robert Davis"
+        },
+        {
+            "ssn": "888-00-8888",
+            "payment_date": "2025-03-15",
+            "amount": 1300.0,
+            "beneficiary_name": "Linda Garcia"
+        },
+        {
+            "ssn": "999-00-9999",
+            "payment_date": "2025-03-15",
+            "amount": 1650.4,
+            "beneficiary_name": "Michael Rodriguez"
+        }
+    ],
+    "llm_interpretation": "\n    **Comprehensive Risk Analysis:**\n\n    **Points of Concern:**\n    1.  **Critical Duplicates:** The presence of duplicate SSNs in the same month is a strong indicator of fraud or serious systemic error. Requires immediate action.\n    2.  **Value Anomalies:** The ML model flagged payments with values that, whilst not duplicated, deviate significantly from the pattern. The payment of $2100.00 to SSN 666-00-6666 is a clear example, being much higher than the average.\n    3.  **High Variability:** The elevated standard deviation relative to the mean suggests that there are different payment categories or significant outliers, which may complicate the detection of subtle fraud.\n\n    **Recommended Next Steps:**\n    - **Immediate Investigation:** Contact the beneficiaries associated with duplicate SSNs to validate the transactions.\n    - **Anomaly Audit:** Review the payments flagged by the ML model to determine if they are legitimate (e.g. backdated payments) or fraudulent.\n    - **Model Refinement:** Consider adding more features to the ML model (e.g. beneficiary history, location) to improve anomaly detection accuracy.\n    ",
+    "message": "Risk analysis data available."
+}

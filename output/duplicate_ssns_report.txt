@@ -1,0 +1,7 @@
+Duplicate SSNs Detected Report:
+========================================
+           ssn payment_date  amount         beneficiary_name payment_month
+0  111-00-1111   2025-01-15  1200.5                 John Doe       2025-01
+3  111-00-1111   2025-01-15  1200.5       John Doe Duplicate       2025-01
+5  555-00-5555   2025-02-15  1150.0            Charles Brown       2025-02
+9  555-00-5555   2025-02-15  1150.0  Charles Brown Duplicate       2025-02

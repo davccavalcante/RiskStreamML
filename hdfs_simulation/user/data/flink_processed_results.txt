@@ -1,0 +1,11 @@
+Flink Aggregation Result (Payment Count per Beneficiary):
+======================================================================
+John Doe: 2
+Jane Smith: 3
+Peter Jones: 2
+Mary Williams: 1
+Charles Brown: 1
+Patricia Miller: 1
+Robert Davis: 1
+Linda Garcia: 1
+Michael Rodriguez: 1

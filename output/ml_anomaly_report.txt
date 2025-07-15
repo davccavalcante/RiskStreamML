@@ -1,0 +1,8 @@
+Anomaly Report Detected by Machine Learning (Isolation Forest):
+======================================================================
+            ssn payment_date  amount   beneficiary_name
+3   444-00-4444   2025-01-15   990.2      Mary Williams
+6   666-00-6666   2025-02-15  2100.0    Patricia Miller
+8   777-00-7777   2025-03-15   780.9       Robert Davis
+9   888-00-8888   2025-03-15  1300.0       Linda Garcia
+11  999-00-9999   2025-03-15  1650.4  Michael Rodriguez
